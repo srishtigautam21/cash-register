@@ -1,11 +1,77 @@
 *{
 
 }
+:root{
+    background-position: 20%;
+    background-color: lightseagreen;
+}
 .container{
-    margin-top: 4rem;
-    margin-right: auto;
-    margin-bottom: 7rem;
-    margin-left: auto;
-    text-align: center;
+   
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    align-items: center;
+    justify-content: center; 
+    
     
 }
+.heading{
+    margin-top: 2rem;
+}
+.container p{
+    font-size: large;
+    font-weight: 200;
+    font-stretch: condensed;
+    margin-bottom: 2rem;
+
+}
+#check-button{
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+#bill-amount{
+    padding: 0.5rem 0.5rem;
+    font-size: large ;
+    font-weight: bold solid black;
+    margin-bottom: 1rem;
+    border-width: medium;
+}
+.bill-label{
+    padding: 0.5rem 0.5rem;
+    font-size:x-large ;
+    font-weight: bold solid black;
+}
+#cash-amount{
+    padding: 0.5rem 0.5rem;
+    font-size: large ;
+    font-weight: bold solid black;
+    
+    border-width: medium;
+}
+.cash-label{
+    padding: 0.5rem 0.5rem;
+    font-size:x-large ;
+    
+    font-weight: bold solid black;
+}
+
+th, td {
+    border: 2px solid black;
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+    background-color: white; 
+}
+.caption-change{
+    padding: 0.5rem 0.5rem;
+    font-size:x-large ;
+    
+    font-weight: bold solid black;
+
+}
+
+
+
+
+

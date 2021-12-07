@@ -9,19 +9,30 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cash Register Manager</h1>
+        <h1 class="heading">Cash Register Manager</h1>
         <p>Enter the bill amount and cash given by 
         the customer and know minimum number of notes to return.</p>
-        <label for="bill-amount">Bill Amount:</label>
+        <label for="bill-amount"><span class="bill-label">Bill Amount:</label></span>
         <input id="bill-amount"></input>
     <!-- <button id="">Next</button> -->
-        <label for="cash-amount">Cash:</label>
+        <label for="cash-amount"><span class="cash-label">Cash:</label></span>
         <input id="cash-amount"></input>
         <button id="check-button">Check</button>
-        <table class="change-table"></table>
-        <caption>Return Change</caption>
+        <p id="error-message"></p>
+        
+        <table class="change-table">
+            <caption><span class="caption-change">Return Change</span></caption>
         <tr>
-            <th>No. of notes</th>
+            <th>No. of Notes</th>
+            <td class="no-Of-Notes"></td>
+            <td class="no-Of-Notes"></td>
+            <td class="no-Of-Notes"></td>
+            <td class="no-Of-Notes"></td>
+            <td class="no-Of-Notes"></td>
+            <td class="no-Of-Notes"></td>
+        </tr>
+        <tr>
+            <th>Notes</th>
             <td>2000</td>
             <td>500</td>
             <td>100</td>
@@ -30,6 +41,10 @@
             <td>5</td>
             <td>1</td>
         </tr>
+
+        </table>
+        
+        
 
     </div>
     
