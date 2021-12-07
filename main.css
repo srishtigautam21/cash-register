@@ -60,11 +60,15 @@ body{
     
     font-weight: bold solid black;
 }
+.change-table{
+    border-collapse: collapse;
+
+}
 
 th, td {
     border: 2px solid black;
     width: 0%;
-    border-collapse: collapse;
+    
     padding: 0.4rem;
     background-color: white; 
     margin:0px;
