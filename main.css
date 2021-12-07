@@ -1,9 +1,14 @@
 *{
 
 }
+body{
+    margin:0px;
+}
+
 :root{
-    background-position: 20%;
+    
     background-color: lightseagreen;
+    
 }
 .container{
    
@@ -62,6 +67,7 @@ th, td {
     border-collapse: collapse;
     padding: 0.4rem;
     background-color: white; 
+    margin:0px;
 }
 .caption-change{
     padding: 0.5rem 0.5rem;
@@ -70,7 +76,34 @@ th, td {
     font-weight: bold solid black;
 
 }
+.footer{
+    background-color: black;
+    text-align: center;
+    bottom: 0;
+    padding: 1rem 1rem;
+    color: white;
+    margin-top: 30px;
+}
+.inside-footer{
 
+    font-size:large ;
+    color:white;
+    /* margin-top: 5%; */
+    font-weight:medium;
+}
+.link{
+    text-decoration: none;
+    font-size:large ;
+    color:white;
+    font-weight:medium;
+}
+.inline-link{
+   
+    list-style: none;
+   
+    display: inline;
+    margin-right: 2rem;
+}
 
 
 
