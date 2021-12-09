@@ -9,19 +9,20 @@ var availableNotes=[2000,500,100,20,10,5,1];
 btncheck.addEventListener("click",function validbillamount()
 {
     hidemsg();
+    console.log(typeof billamount.value);
     if(billamount.value>0)
     {
         
-        if(cashamount.value>=billamount.value)
+        if(Number(cashamount.value) >= Number(billamount.value))
         {
-            var amountTobeReturned=cashamount.value - billamount.value;
-            if(amountTobeReturned<0){
+            var amountTobeReturned=Number(cashamount.value) - Number(billamount.value);
+            /**if(amountTobeReturned<0){
                 message.style.display="block";
                 message.innerText="The cash provided should be greater or equal to bill Amount";
-            }
-            else{
-                calculateCashTobeReturned(amountTobeReturned);
-            }
+            }**/
+            // else{
+            calculateCashTobeReturned(amountTobeReturned);
+            // }
             
         }
         else{
