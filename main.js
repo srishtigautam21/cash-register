@@ -11,11 +11,18 @@ btncheck.addEventListener("click",function validbillamount()
     hidemsg();
     if(billamount.value>0)
     {
-        console.log("clicked");
+        
         if(cashamount.value>=billamount.value)
         {
-            var amountTobeReturned=cashamount.value-billamount.value;
-            calculateCashTobeReturned(amountTobeReturned);
+            var amountTobeReturned=cashamount.value - billamount.value;
+            if(amountTobeReturned<0){
+                message.style.display="block";
+                message.innerText="The cash provided should be greater or equal to bill Amount";
+            }
+            else{
+                calculateCashTobeReturned(amountTobeReturned);
+            }
+            
         }
         else{
             message.style.display="block";
